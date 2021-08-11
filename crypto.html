@@ -1,117 +1,205 @@
-<!DOCTYPE html>
+
+<!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-	<title> crypto currency's</title>
-	<style> 
-	body {
-    background-color:black}
-    </style>
+  <title>Virtual Anarchy</title>
+  <meta name="description" content="a personal website to grow my Linux server and website skills" />
+  <meta name="keywords" content="HTML 5 games, Linux webserver" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
+
 <body>
-<div>
-<div style="float:left;border:2px solid green;">
-<!-- TradingView Widget BEGIN -->
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html"><span class="logo_colour">Virtual Anarchy</span></a></h1>
+          <h2>Simple. Game Centric. Website.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          
+          <li><a href="page.html">HTML 5 Games</a></li>
+          <li class="selected"><a href="another_page.html">Crypto</a></li>
+          <li><a href="contact.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+    
+      <div>
+        <!-- insert the page content here -->
+        <h1>Trading View Widget</h1>
+        <p><h2>Crypto Junkie</h2></p>
+		
+		<a href="https://v3.aggr.trade/ic6i">BTC Aggregate of Exchanges</a><br>
+		<div style="float:left;">
+		<!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text">Cryptocurrency Markets</span></a> by TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/cryptocurrencies/" rel="noopener" target="_blank"><span class="blue-text">Bitcoin and Altcoin Prices</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
   {
-  "width": "1000",
-  "height": "500",
-  "defaultColumn": "overview",
-  "screener_type": "crypto_mkt",
-  "displayCurrency": "USD",
-  "transparency":false,
-  "locale": "en"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-</div>
-<div style="float:left;border:2px solid green;">
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div id="tradingview_230b2"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITMEX-XBTUSD/" rel="noopener" target="_blank"><span class="blue-text">XBTUSD chart</span></a> by TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script type="text/javascript">
-  new TradingView.widget(
-  {
-  "width":1080,
-  "height":610,
-  "symbol": "BITMEX:XBTUSD",
-  "interval": "720",
-  "timezone": "Etc/UTC",
-  "theme": "Dark",
-  "style": "1",
+  "title_raw": "Cryptocurrencies",
+  "belowLineFillColorGrowing": "rgba(60, 188, 152, 0.05)",
+  "gridLineColor": "rgba(233, 233, 234, 1)",
+  "scaleFontColor": "rgba(218, 221, 224, 1)",
+  "title": "Cryptocurrencies",
+  "tabs": [
+    {
+      "title_raw": "Overview",
+      "symbols": [
+        {
+          "s": "BITFINEX:BTCUSD"
+        },
+        {
+          "s": "BITFINEX:ETHUSD"
+        },
+        {
+          "s": "BITFINEX:XRPUSD"
+        },
+        {
+          "s": "COINBASE:BCHUSD"
+        },
+        {
+          "s": "COINBASE:LTCUSD"
+        },
+        {
+          "s": "BINANCE:ZECUSD"
+        }
+      ],
+      "title": "Overview"
+    },
+    {
+      "title_raw": "Bitcoin",
+      "symbols": [
+        {
+          "s": "BITFINEX:BTCUSD"
+        },
+        {
+          "s": "COINBASE:BTCEUR"
+        },
+        {
+          "s": "COINBASE:BTCGBP"
+        },
+        {
+          "s": "BITFLYER:BTCJPY"
+        },
+        {
+          "s": "WEX:BTCRUR"
+        },
+        {
+          "s": "CME:BTC1!"
+        }
+      ],
+      "title": "Bitcoin"
+    },
+    {
+      "title_raw": "LiteCoin",
+      "symbols": [
+        {
+          "s": "COINBASE:LTCUSD"
+        },
+        {
+          "s": "BITMEX:LTCXBT"
+        },
+        {
+          "s": "KORBIT:LTCKRW"
+        },
+        {
+          "s": "BITSO:LTCMXN"
+        },
+        {
+          "s": "BINANCE:LTCBTC"
+        },
+        {
+          "s": "BINANCE:LTCETH"
+        }
+      ],
+      "title": "LiteCoin"
+    },
+    {
+      "title_raw": "Ethereum",
+      "symbols": [
+        {
+          "s": "COINBASE:ETHUSD"
+        },
+        {
+          "s": "KRAKEN:ETHEUR"
+        },
+        {
+          "s": "KRAKEN:ETHGBP"
+        },
+        {
+          "s": "KRAKEN:ETHJPY"
+        },
+        {
+          "s": "POLONIEX:ETHBTC"
+        },
+        {
+          "s": "WEX:ETHLTC"
+        }
+      ],
+      "title": "Ethereum"
+    },
+    {
+      "title_raw": "Bitcoin Cash",
+      "symbols": [
+        {
+          "s": "COINBASE:BCHUSD"
+        },
+        {
+          "s": "BITSTAMP:BCHEUR"
+        },
+        {
+          "s": "CEXIO:BCHGBP"
+        },
+        {
+          "s": "POLONIEX:BCHBTC"
+        },
+        {
+          "s": "HITBTC:BCHETH"
+        },
+        {
+          "s": "WEX:BCHLTC"
+        }
+      ],
+      "title": "Bitcoin Cash"
+    }
+  ],
+  "plotLineColorFalling": "rgba(255, 74, 104, 1)",
+  "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
+  "showChart": true,
+  "title_link": "/markets/cryptocurrencies/prices-all/",
   "locale": "en",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": false,
-  "hide_top_toolbar":true,
-  "allow_symbol_change": true,
-  "container_id": "tradingview_230b2"
+  "symbolActiveColor": "rgba(242, 250, 254, 1)",
+  "belowLineFillColorFalling": "rgba(255, 74, 104, 0.05)",
+  "height": 660,
+  "width": 400
 }
-  );
   </script>
 </div>
 <!-- TradingView Widget END -->
-</div>
-<div style="float:left;border:2px solid green">
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div id="tradingview_b2671"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITFINEX-ETHUSD/" rel="noopener" target="_blank"><span class="blue-text">ETHUSD chart</span></a> by TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script type="text/javascript">
-  new TradingView.widget(
-  {
-  "width": 1080,
-  "height": 610,
-  "symbol": "BITFINEX:ETHUSD",
-  "interval": "720",
-  "timezone": "Etc/UTC",
-  "theme": "Dark",
-  "style": "1",
-  "locale": "en",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": false,
-  "hide_top_toolbar": true,
-  "save_image": false,
-  "container_id": "tradingview_b2671"
-}
-  );
-  </script>
-</div>
-<!-- TradingView Widget END -->
-</div>
-<div style="float:left;border:2px solid green">
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div id="tradingview_3faaa"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITFINEX-LTCUSD/" rel="noopener" target="_blank"><span class="blue-text">LTCUSD chart</span></a> by TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script type="text/javascript">
-  new TradingView.widget(
-  {
-  "width": 1080,
-  "height": 610,
-  "symbol": "BITFINEX:LTCUSD",
-  "interval": "720",
-  "timezone": "Etc/UTC",
-  "theme": "Dark",
-  "style": "1",
-  "locale": "en",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": false,
-  "hide_top_toolbar": true,
-  "save_image": false,
-  "container_id": "tradingview_3faaa"
-}
-  );
-  </script>
-</div>
-<!-- TradingView Widget END -->
-</div>
-</div>
+      </div>
+     
+      
+     
+    </div>
+    </div>
+    <div id="content_footer"></div>
+     
+    <div id="footer">
+      <p><a href="index.html">Home</a>  | <a href="page.html">HTML 5 Games</a> | <a href="another_page.html">Crypto</a> | <a href="contact.html">About</a></p>
+      <p><a href="http://www.html5webtemplates.co.uk">Copyright &copy; simplestyle_6</a> | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">Free CSS Templates</a></p>
+    </div>
+    <p>&nbsp;</p>
+  </div>
 </body>
 </html>
